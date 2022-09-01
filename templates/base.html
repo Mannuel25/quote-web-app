@@ -1,0 +1,24 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Quotes Web App">
+	<meta name="keywords" content="Quotes, Quotes-generator">
+	<title>
+		{% block title %}QuoteDeck{% endblock title %}
+	</title>
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+	
+	
+</head>
+<body>
+	{% include 'navbar.html' %}
+	<main>
+		{% block content %}
+		{% endblock content %}
+	</main>
+	
+</body>
+</html>
