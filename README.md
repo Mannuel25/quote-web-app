@@ -40,7 +40,17 @@ Then run the command to activate the virtual environment
 ```
 pip install -r requirements.txt
 ```
-
+## Make migrations
+Run the following commands separately to make migrations
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+## Create a new superuser
+Run the following command to create a new superuser
+```
+python manage.py createsuperuser
+```
 ## Run the project
 
 ```
