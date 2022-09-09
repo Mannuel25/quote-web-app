@@ -25,7 +25,7 @@ def signinPage(request):
             return redirect('dashboard')
         else:
             messages.error(request, 'Invalid username or password')
-    return render(request, 'sigin.html',context={})
+    return render(request, 'registration/login.html',context={})
 
 def signoutPage(request):
     logout(request)
