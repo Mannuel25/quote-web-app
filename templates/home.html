@@ -1,7 +1,27 @@
-{% extends 'base.html' %}
 {% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="https://kit.fontawesome.com/d533f9fc0c.js" crossorigin="anonymous"></script>
+    <title>Home- QuoteDeck</title>
 
+</head>
 
-{% endblock content %}
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="call-text">
+                <h1>An unlimited access to <span>Quotes</span></h1>
+                <button><a href="{% url 'signup' %}">Get started</a></button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
